@@ -80,8 +80,8 @@ ZSH_THEME="aussiegeek"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search sudo colored-man-pages copybuffer dirhistory history jsontools) 
 
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions sudo zsh-history-substring-search sudo web-search zsh-history-substring-search copybuffer dirhistory history jsontools) 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -114,7 +114,6 @@ fi
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions zsh-history-substring-search sudo web-searchi zsh_reload zsh-history-substring-search)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH=$HOME/.local/bin:$PATH
